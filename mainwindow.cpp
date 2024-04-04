@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-static const char blankString[] = QT_TRANSLATE_NOOP("MainWindow", "N/A");
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -26,12 +24,6 @@ MainWindow::MainWindow(QWidget *parent)
         list << info.portName();
       ui->comboBox->addItem(list.first());
     }
-
-
-    //ui->pushButton_6->setStyleSheet("QPushButton:border-style{ none;}");
-
-    //ui->toolButton->setStyleSheet("QToolButton:hover{ background-color: red;}");
-    //ui->pushButton->setStyleSheet("QPushButton:hover{ background-color: red;}");
 }
 
 MainWindow::~MainWindow() {
